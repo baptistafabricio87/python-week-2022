@@ -15,7 +15,6 @@ tasks:
 #   - port: 8000
 #     onOpen: open-preview
 #     visibility: public
-
 vscode:
   extensions:
     - "ms-python.python@2021.9.1218897484"
@@ -24,3 +23,4 @@ vscode:
     - "jdinhlife.gruvbox"
     - ms-toolsai.jupyter-renderers
     - ms-toolsai.jupyter-keymap
+    - ms-toolsai.jupyter
