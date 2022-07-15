@@ -18,6 +18,8 @@ uvicorn = "^0.18.2"
 
 [tool.poetry.dev-dependencies]
 ipython = "^8.2.0"
+pytest = "^7.1.2"
+requests = "^2.28.1"
 
 [tool.poetry.scripts]
 beerlog = "beerlog.__main__:main"
