@@ -2,7 +2,6 @@ from fastapi.testclient import TestClient
 
 from beerlog.api import api
 
-
 client = TestClient(api)
 
 
@@ -14,7 +13,7 @@ def test_create_beer_via_api():
             "style": "KornPA",
             "flavor": 1,
             "image": 1,
-            "cost": 2
+            "cost": 2,
         },
     )
     assert response.status_code == 201
