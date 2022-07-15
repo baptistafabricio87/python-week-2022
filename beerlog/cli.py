@@ -27,9 +27,18 @@ def add(
 @main.command("list")
 def list_beers(style: Optional[str] = None):
     """Lists beers in database"""
-    beers = get_beers_from_database()
-    table = Table(title="BeerLog")
-    headers = ["id", "name", "style", "rate", "date"]
+    beers = get_beers_from_database(style)
+    table = Table(title="BeerLog" if not style else f"Beerlog {style}")
+    headers = [
+        "id",
+        "name",
+        "style",
+        "flavor",
+        "image",
+        "cost",
+        "rate",
+        "date",
+    ]
     for header in headers:
         table.add_column(header, style="purple")
     for beer in beers:
